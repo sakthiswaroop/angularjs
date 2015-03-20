@@ -1,0 +1,3 @@
+function firstctrl($scope){
+
+}

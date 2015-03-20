@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng</title>
+	
+<link rel="stylesheet" href="foundation.min.css">
+</head>
+<body>
+
+<div ng-app ="myapp">
+	
+	<div ng-controller = "FirstCtrl">
+		<input type ="text" ng-model="hello"> 
+		{{hello}}
+	</div>
+	<div ng-controller = "SecondCtrl">
+		<input type ="text" ng-model="hello"> 
+		{{hello}}
+	</div>
+
+
+
+</div>
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="con.js"></script>
+</body>
+</html>

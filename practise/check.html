@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="parking">
+<head>
+<title>[Packt] Parking</title>
+<script src="angular.js"></script>
+<script src="angular-sanitize.js"></script>
+<script>
+var parking = angular.module("parking", []);
+parking.controller("parkingCtrl", function ($scope) {
+$scope.appTitle = "[Packt] Parking";
+});
+</script>
+</head>
+<body ng-controller="parkingCtrl">
+<h3  ng-bind-html ="appTitle"></h3>
+<h2 ng-bind-html="appTitle"></h2>
+</body>
+</html>

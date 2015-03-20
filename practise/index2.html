@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp"> 
+<head> 
+	<title>my html</title>
+<script type="text/javascript" src="angular.js"></script>
+
+<script type="text/javascript" src="controller.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+<p>nothinghere</p>
+<p>{{name}}</p>
+<button  ng-init="count=0" ng-hide="count>5" ng-click="count=count+1">click on for counting</button>
+counting:{{count}}
+<button ng-click="count=count-1">remove</button>
+<br/>
+
+
+<ul ng-init="freinds=['a','b','c']">
+
+	<li ng-repeat="f in freinds">{{f}}  </li>
+</ul>
+
+<br/>
+<br/>
+<ul ng-init="friend=[
+						{ name:'A',place:'Z'},
+						{ name:'B', place:'Y'},
+						{ name:'C', place:'X'}  ]">
+
+<li ng-repeat="F in friend |filter:filterkey">{{F.name}} lives in {{F.place}}</li>	
+
+<input ng-model="filterkey"/>
+
+</ul>
+
+
+
+
+
+
+
+<input type="submit" onclick="f();">
+
+
+
+
+<br/>
+</body>
+</html>
+
+ 

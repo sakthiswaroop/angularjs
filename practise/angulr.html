@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="phoneapp">
+<head> 
+	<title>first</title>
+</head>
+<body ng-controller="phonelistctrl">
+
+<ul>
+	
+<li ng-repeat="phone in phones">
+	<span>{{phone.name}}</span>
+	<p>
+		{{phone.snippet}}
+	</p>
+
+</li>
+
+</ul>
+
+
+
+
+
+<input type="submit" onclick="f()">
+<script type="text/javascript" src="firstjs.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+
+
+
+</body>
+</html>
